@@ -1,7 +1,6 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { scrollToSection } from "@/lib/scroll";
 import { site } from "@/content/site";
@@ -139,16 +138,25 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-2 sm:gap-3">
-          <Link
-            href="/resume.pdf"
-            className="inline-flex items-center rounded-full bg-[#002147] px-3 py-2 text-xs font-semibold text-white shadow-sm transition-all hover:bg-[#001a38] hover:shadow-md sm:px-4 sm:py-2.5 sm:text-sm"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Download resume"
-          >
-            <span className="hidden sm:inline">Download resume</span>
-            <span className="sm:hidden">Resume</span>
-          </Link>
+          <div className="flex flex-wrap items-center justify-end gap-x-2 gap-y-1 sm:gap-x-3">
+            <a
+              href={site.resume.href}
+              download={site.resume.downloadFileName}
+              className="inline-flex items-center rounded-full bg-[#002147] px-3 py-2 text-xs font-semibold text-white shadow-sm transition-all hover:bg-[#001a38] hover:shadow-md sm:px-4 sm:py-2.5 sm:text-sm"
+              title="Download resume (PDF)"
+            >
+              <span className="hidden sm:inline">Download resume</span>
+              <span className="sm:hidden">Resume</span>
+            </a>
+            <a
+              href={site.resume.googleDriveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden text-xs font-semibold text-[#002147]/80 underline decoration-[#002147]/25 underline-offset-4 transition-colors hover:text-[#001a38] hover:decoration-[#002147] md:inline"
+            >
+              Google Drive
+            </a>
+          </div>
 
           <button
             type="button"
@@ -207,15 +215,23 @@ export function Navbar() {
               <button type="button" className={linkBase} onClick={() => go("contact")}>
                 Contact
               </button>
-              <Link
-                href="/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+              <a
+                href={site.resume.href}
+                download={site.resume.downloadFileName}
                 onClick={() => setMobileOpen(false)}
                 className="mt-2 inline-flex items-center justify-center rounded-full bg-[#002147] px-4 py-3 text-sm font-semibold text-white"
               >
                 Download resume
-              </Link>
+              </a>
+              <a
+                href={site.resume.googleDriveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileOpen(false)}
+                className="text-center text-sm font-semibold text-[#002147] underline decoration-[#002147]/30 underline-offset-4"
+              >
+                Open resume on Google Drive
+              </a>
             </div>
           </motion.div>
         )}

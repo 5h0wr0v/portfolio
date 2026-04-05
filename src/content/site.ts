@@ -235,4 +235,10 @@ export const site = {
       href: "https://wa.me/8801926886230",
     },
   },
+  resume: {
+    href: "/resume.pdf",
+    downloadFileName: "Showrov-Azam-resume.pdf",
+    googleDriveUrl:
+      "https://drive.google.com/file/d/1uLtqQmA_cvol1xKeTif2-6drK7KN7_SE/view?usp=sharing",
+  },
 };
