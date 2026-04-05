@@ -9,7 +9,13 @@ export type Certification = {
   verifyUrl: string;
 };
 
-export type ContactLinkIcon = "linkedin" | "scholar" | "researchgate" | "orcid" | "webofscience";
+export type ContactLinkIcon =
+  | "linkedin"
+  | "github"
+  | "scholar"
+  | "researchgate"
+  | "orcid"
+  | "webofscience";
 
 export type ContactLink = {
   id: string;
@@ -200,6 +206,12 @@ export const site = {
         label: "LinkedIn",
         href: "https://www.linkedin.com/in/showrov-azam-7aa832241/",
         icon: "linkedin",
+      },
+      {
+        id: "github",
+        label: "GitHub",
+        href: "https://github.com/5h0wr0v",
+        icon: "github",
       },
       {
         id: "scholar",
