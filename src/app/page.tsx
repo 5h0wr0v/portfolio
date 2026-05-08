@@ -206,6 +206,71 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="thesis" className="scroll-mt-24 py-20 md:py-24">
+          <div className="mx-auto max-w-6xl px-5 lg:px-8">
+            <SectionTitle
+              eyebrow="Research"
+              title="Undergraduate thesis"
+              subtitle="Capstone thesis overview, supervisor details, and direct access to the full report."
+            />
+            <motion.div
+              initial={{ opacity: 0, y: 14 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.45 }}
+              className="mx-auto mt-12 max-w-3xl rounded-2xl border border-[#002147]/12 bg-white p-8 shadow-sm"
+            >
+              <p className="text-[10px] font-bold uppercase tracking-widest text-[#002147]/45">{site.thesis.heading}</p>
+              <p className="mt-2 text-sm font-medium leading-relaxed text-[#002147]">{site.thesis.summary}</p>
+
+              <div className="mt-6 border-t border-[#002147]/10 pt-5">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-[#002147]/45">Thesis supervisor</p>
+                <p className="mt-1 font-semibold text-[#002147]">{site.thesis.supervisor.name}</p>
+                <p className="mt-0.5 text-sm text-[#002147]/75">{site.thesis.supervisor.role}</p>
+                <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1">
+                  <a
+                    href={site.thesis.supervisor.facultyUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-semibold text-[#002147] underline decoration-[#002147]/30 underline-offset-4 transition-colors hover:text-[#001a38] hover:decoration-[#002147]"
+                  >
+                    Faculty profile <span aria-hidden>↗</span>
+                  </a>
+                  <a
+                    href={site.thesis.supervisor.scholarUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-semibold text-[#002147] underline decoration-[#002147]/30 underline-offset-4 transition-colors hover:text-[#001a38] hover:decoration-[#002147]"
+                  >
+                    Google Scholar <span aria-hidden>↗</span>
+                  </a>
+                </div>
+              </div>
+
+              <div className="mt-6 border-t border-[#002147]/10 pt-5">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-[#002147]/45">Thesis report</p>
+                <div className="mt-3 flex flex-wrap items-center gap-3">
+                  <a
+                    href={site.thesis.report.href}
+                    download={site.thesis.report.downloadFileName}
+                    className="inline-flex items-center rounded-full bg-[#002147] px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[#001a38] hover:shadow-md"
+                  >
+                    Download PDF
+                  </a>
+                  <a
+                    href={site.thesis.report.googleDriveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-semibold text-[#002147] underline decoration-[#002147]/30 underline-offset-4 transition-colors hover:text-[#001a38] hover:decoration-[#002147]"
+                  >
+                    Open on Google Drive <span aria-hidden>↗</span>
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
         <section id="certifications" className="scroll-mt-24 py-20 md:pb-28 md:pt-24">
           <div className="mx-auto max-w-6xl px-5 lg:px-8">
             <SectionTitle

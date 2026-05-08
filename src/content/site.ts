@@ -148,6 +148,22 @@ export const site = {
       detail: "Secondary studies with emphasis on mathematics and science.",
     },
   ],
+  thesis: {
+    heading: "Thesis / capstone",
+    summary:
+      "Final Year Thesis: 'A Two-Stage Framework for Dialectal Bengali ASR and Standardization using Whisper and BanglaT5' supervised by Amit Chakraborty Chhoton. This research addresses the digital exclusion of regional speakers by enabling AI to understand unique phonology and nuances rather than flattening them into a single standard.",
+    supervisor: {
+      name: "Amit Chakraborty Chhoton",
+      role: "Assistant Professor, Department of CSE, Daffodil International University",
+      facultyUrl: "https://faculty.daffodilvarsity.edu.bd/profile/cse/amit-cse.html",
+      scholarUrl: "https://scholar.google.com/citations?user=O_HC94EAAAAJ&hl=en",
+    },
+    report: {
+      href: "/thesis-report.pdf",
+      downloadFileName: "Showrov-Azam-undergraduate-thesis.pdf",
+      googleDriveUrl: "https://drive.google.com/file/d/1sB-RsCUOu09O6BPHndkRHE4lA_XP8V9L/view?usp=sharing",
+    },
+  },
   certifications: [
     {
       id: "ibm-python-ds-ai",

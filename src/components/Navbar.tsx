@@ -129,6 +129,9 @@ export function Navbar() {
           <button type="button" onClick={() => go("education")} className={linkBase}>
             Education
           </button>
+          <button type="button" onClick={() => go("thesis")} className={linkBase}>
+            Thesis
+          </button>
           <button type="button" onClick={() => go("certifications")} className={linkBase}>
             Licenses &amp; certifications
           </button>
@@ -208,6 +211,9 @@ export function Navbar() {
               </button>
               <button type="button" className={linkBase} onClick={() => go("education")}>
                 Education
+              </button>
+              <button type="button" className={linkBase} onClick={() => go("thesis")}>
+                Thesis
               </button>
               <button type="button" className={linkBase} onClick={() => go("certifications")}>
                 Licenses &amp; certifications
