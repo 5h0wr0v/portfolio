@@ -67,32 +67,37 @@ export default function Home() {
               >
                 Peer review
               </motion.h3>
-              <motion.div
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.45, delay: 0.06 }}
-                className="mx-auto mt-6 max-w-3xl rounded-2xl border border-[#002147]/12 bg-white p-8 shadow-sm"
-              >
-                <div className="flex flex-wrap items-center gap-3">
-                  <h4 className="font-[family-name:var(--font-playfair)] text-xl font-semibold text-[#002147]">
-                    ACM TALLIP
-                  </h4>
-                  <VerifiedBadge />
-                </div>
-                <p className="mt-2 text-sm font-semibold text-[#002147]/80">{site.journal.role}</p>
-                <p className="mt-1 text-sm text-[#002147]/65">{site.journal.venue}</p>
-                <p className="mt-5 leading-relaxed text-[#002147]/80">{site.journal.detail}</p>
-                <a
-                  href={site.journal.peerReviewVerificationUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#002147] underline decoration-[#002147]/30 underline-offset-4 transition-colors hover:text-[#001a38] hover:decoration-[#002147]"
-                >
-                  Peer review verification (PDF)
-                  <span aria-hidden>↗</span>
-                </a>
-              </motion.div>
+              <div className="mx-auto mt-6 flex max-w-3xl flex-col gap-6">
+                {site.peerReviews.map((review, i) => (
+                  <motion.div
+                    key={review.id}
+                    initial={{ opacity: 0, y: 16 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.45, delay: 0.06 + i * 0.06 }}
+                    className="rounded-2xl border border-[#002147]/12 bg-white p-8 shadow-sm"
+                  >
+                    <div className="flex flex-wrap items-center gap-3">
+                      <h4 className="font-[family-name:var(--font-playfair)] text-xl font-semibold text-[#002147]">
+                        {review.name}
+                      </h4>
+                      <VerifiedBadge />
+                    </div>
+                    <p className="mt-2 text-sm font-semibold text-[#002147]/80">{review.role}</p>
+                    <p className="mt-1 text-sm text-[#002147]/65">{review.venue}</p>
+                    <p className="mt-5 leading-relaxed text-[#002147]/80">{review.detail}</p>
+                    <a
+                      href={review.verificationUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#002147] underline decoration-[#002147]/30 underline-offset-4 transition-colors hover:text-[#001a38] hover:decoration-[#002147]"
+                    >
+                      Peer review verification (PDF)
+                      <span aria-hidden>↗</span>
+                    </a>
+                  </motion.div>
+                ))}
+              </div>
             </div>
 
             <div id="research-publications" className="scroll-mt-28">

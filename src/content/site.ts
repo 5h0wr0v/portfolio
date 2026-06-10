@@ -35,17 +35,32 @@ export const site = {
   ],
   stats: [
     { label: "Publications", value: "4" },
-    { label: "Journal reviewer roles", value: "1" },
+    { label: "Peer reviewer roles", value: "2" },
     { label: "Certifications", value: "7" },
   ],
-  journal: {
-    role: "Peer Reviewer",
-    venue: "ACM Transactions on Asian and Low-Resource Language Information Processing (TALLIP)",
-    detail:
-      "Invited reviewer for manuscript evaluation, methodology soundness, and clarity of contribution in Asian and low-resource language NLP.",
-    peerReviewVerificationUrl:
-      "https://drive.google.com/file/d/1Ih89_s1esr651TGNzDktSMZ7VXN5yCcP/view?usp=sharing",
-  },
+  peerReviews: [
+    {
+      id: "tallip",
+      name: "ACM TALLIP",
+      role: "Peer Reviewer",
+      venue: "ACM Transactions on Asian and Low-Resource Language Information Processing (TALLIP)",
+      detail:
+        "Invited reviewer for manuscript evaluation, methodology soundness, and clarity of contribution in Asian and low-resource language NLP.",
+      verificationUrl:
+        "https://drive.google.com/file/d/1Ih89_s1esr651TGNzDktSMZ7VXN5yCcP/view?usp=sharing",
+    },
+    {
+      id: "iceccme-2026",
+      name: "ICECCME 2026",
+      role: "Peer Reviewer",
+      venue:
+        "International Conference on Electrical, Computer, Communications and Mechatronics Engineering (ICECCME 2026)",
+      detail:
+        "Conference peer reviewer for manuscript evaluation in electrical, computer, communications, and mechatronics engineering.",
+      verificationUrl:
+        "https://drive.google.com/file/d/1n2Zoya1fBwPQd8MjpkRg0VPT43OCGT9k/view?usp=sharing",
+    },
+  ],
   publications: [
     {
       id: "boishommo-hate",
@@ -76,7 +91,8 @@ export const site = {
       description:
         "LLM-based approach to Sadhu–Cholit register identification for Bangla. Co-authored with Rasel Parvez, Md Anwar Hossain, Md. Sadekur Rahman, and colleagues.",
       researchGateUrl:
-        "https://www.researchgate.net/publication/399155998_From_Classical_to_Colloquial_Leveraging_LLMs_for_Sadhu-Cholit_Register_Identification_in_Bangla",
+        "https://www.researchgate.net/publication/406152377_From_Classical_to_Colloquial_Leveraging_LLMs_for_Sadhu-Cholit_Register_Identification_in_Bangla",
+      doiUrl: "https://www.atlantis-press.com/proceedings/idaa-25/126024942",
     },
     {
       id: "idaa-boishommo-imbalance",
@@ -86,7 +102,8 @@ export const site = {
       description:
         "Benchmarking class imbalance in multi-label Bangla hate speech detection within the BOISHOMMO setting. Co-authored with Sifat Khan, Rashed Hossain, MD Abdullah Al Kafi, and colleagues.",
       researchGateUrl:
-        "https://www.researchgate.net/publication/402021615_BOISHOMMO_Benchmarking_Class_Imbalance_in_Bangla_Multi-Label_Hate_Speech_Detection",
+        "https://www.researchgate.net/publication/406152252_BOISHOMMO_Benchmarking_Class_Imbalance_in_Bangla_Multi-Label_Hate_Speech_Detection",
+      doiUrl: "https://www.atlantis-press.com/proceedings/idaa-25/126024911",
     },
   ] satisfies Publication[],
   volunteering: [
