@@ -35,7 +35,7 @@ export const site = {
   ],
   stats: [
     { label: "Publications", value: "4" },
-    { label: "Peer reviewer roles", value: "2" },
+    { label: "Peer reviewer roles", value: "3" },
     { label: "Certifications", value: "7" },
   ],
   peerReviews: [
@@ -48,6 +48,16 @@ export const site = {
         "Invited reviewer for manuscript evaluation, methodology soundness, and clarity of contribution in Asian and low-resource language NLP.",
       verificationUrl:
         "https://drive.google.com/file/d/1Ih89_s1esr651TGNzDktSMZ7VXN5yCcP/view?usp=sharing",
+    },
+    {
+      id: "progress-in-ai",
+      name: "Progress in Artificial Intelligence",
+      role: "Peer Reviewer",
+      venue: "Progress in Artificial Intelligence (Springer Nature)",
+      detail:
+        "Invited reviewer for manuscript evaluation, methodology soundness, and clarity of contribution in artificial intelligence research.",
+      verificationUrl:
+        "https://drive.google.com/file/d/1RmuuLGyWobs3yVmPYWjm9m0-SqJuNMNe/view?usp=drive_link",
     },
     {
       id: "iceccme-2026",
