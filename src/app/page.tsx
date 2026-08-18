@@ -223,54 +223,73 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.45 }}
-              className="mx-auto mt-12 max-w-3xl rounded-2xl border border-[#002147]/12 bg-white p-8 shadow-sm"
+              className="mx-auto mt-12 max-w-5xl rounded-2xl border border-[#002147]/12 bg-white p-6 shadow-sm sm:p-8"
             >
-              <p className="text-[10px] font-bold uppercase tracking-widest text-[#002147]/45">{site.thesis.heading}</p>
-              <p className="mt-2 text-sm font-medium leading-relaxed text-[#002147]">{site.thesis.summary}</p>
+              <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
+                <div className="min-w-0 flex-1">
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-[#002147]/45">{site.thesis.heading}</p>
+                  <p className="mt-2 text-sm font-medium leading-relaxed text-[#002147]">{site.thesis.summary}</p>
 
-              <div className="mt-6 border-t border-[#002147]/10 pt-5">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-[#002147]/45">Thesis supervisor</p>
-                <p className="mt-1 font-semibold text-[#002147]">{site.thesis.supervisor.name}</p>
-                <p className="mt-0.5 text-sm text-[#002147]/75">{site.thesis.supervisor.role}</p>
-                <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1">
-                  <a
-                    href={site.thesis.supervisor.facultyUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm font-semibold text-[#002147] underline decoration-[#002147]/30 underline-offset-4 transition-colors hover:text-[#001a38] hover:decoration-[#002147]"
-                  >
-                    Faculty profile <span aria-hidden>↗</span>
-                  </a>
-                  <a
-                    href={site.thesis.supervisor.scholarUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm font-semibold text-[#002147] underline decoration-[#002147]/30 underline-offset-4 transition-colors hover:text-[#001a38] hover:decoration-[#002147]"
-                  >
-                    Google Scholar <span aria-hidden>↗</span>
-                  </a>
-                </div>
-              </div>
+                  <div className="mt-6 border-t border-[#002147]/10 pt-5">
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-[#002147]/45">Thesis supervisor</p>
+                    <p className="mt-1 font-semibold text-[#002147]">{site.thesis.supervisor.name}</p>
+                    <p className="mt-0.5 text-sm text-[#002147]/75">{site.thesis.supervisor.role}</p>
+                    <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1">
+                      <a
+                        href={site.thesis.supervisor.facultyUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-semibold text-[#002147] underline decoration-[#002147]/30 underline-offset-4 transition-colors hover:text-[#001a38] hover:decoration-[#002147]"
+                      >
+                        Faculty profile <span aria-hidden>↗</span>
+                      </a>
+                      <a
+                        href={site.thesis.supervisor.scholarUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-semibold text-[#002147] underline decoration-[#002147]/30 underline-offset-4 transition-colors hover:text-[#001a38] hover:decoration-[#002147]"
+                      >
+                        Google Scholar <span aria-hidden>↗</span>
+                      </a>
+                    </div>
+                  </div>
 
-              <div className="mt-6 border-t border-[#002147]/10 pt-5">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-[#002147]/45">Thesis report</p>
-                <div className="mt-3 flex flex-wrap items-center gap-3">
-                  <a
-                    href={site.thesis.report.href}
-                    download={site.thesis.report.downloadFileName}
-                    className="inline-flex items-center rounded-full bg-[#002147] px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[#001a38] hover:shadow-md"
-                  >
-                    Download PDF
-                  </a>
-                  <a
-                    href={site.thesis.report.googleDriveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm font-semibold text-[#002147] underline decoration-[#002147]/30 underline-offset-4 transition-colors hover:text-[#001a38] hover:decoration-[#002147]"
-                  >
-                    Open on Google Drive <span aria-hidden>↗</span>
-                  </a>
+                  <div className="mt-6 border-t border-[#002147]/10 pt-5">
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-[#002147]/45">Thesis report</p>
+                    <div className="mt-3 flex flex-wrap items-center gap-3">
+                      <a
+                        href={site.thesis.report.href}
+                        download={site.thesis.report.downloadFileName}
+                        className="inline-flex items-center rounded-full bg-[#002147] px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[#001a38] hover:shadow-md"
+                      >
+                        Download PDF
+                      </a>
+                      <a
+                        href={site.thesis.report.googleDriveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-semibold text-[#002147] underline decoration-[#002147]/30 underline-offset-4 transition-colors hover:text-[#001a38] hover:decoration-[#002147]"
+                      >
+                        Open on Google Drive <span aria-hidden>↗</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
+
+                {"imageSrc" in site.thesis && site.thesis.imageSrc ? (
+                  <div className="shrink-0 self-center md:self-start md:w-64 lg:w-72 xl:w-[310px]">
+                    <div className="relative overflow-hidden rounded-2xl border-2 border-[#002147]/15 bg-white p-1.5 shadow-[0_14px_32px_-10px_rgba(0,33,71,0.2)] transition-transform duration-300 hover:scale-[1.02]">
+                      <Image
+                        src={site.thesis.imageSrc}
+                        alt={"imageAlt" in site.thesis && site.thesis.imageAlt ? site.thesis.imageAlt : "Undergraduate Thesis Presentation"}
+                        width={620}
+                        height={827}
+                        className="aspect-[3/4] w-full rounded-xl object-cover object-center"
+                        sizes="(max-width: 768px) 100vw, 310px"
+                      />
+                    </div>
+                  </div>
+                ) : null}
               </div>
             </motion.div>
           </div>
