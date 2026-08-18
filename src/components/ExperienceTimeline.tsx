@@ -29,7 +29,7 @@ type ExperienceTimelineProps = {
 
 export function ExperienceTimeline({ items }: ExperienceTimelineProps) {
   return (
-    <div className="relative mx-auto max-w-4xl">
+    <div className="relative mx-auto max-w-5xl">
       <div
         className="absolute start-3 top-2 bottom-2 w-px bg-[#002147]/20 md:start-4"
         aria-hidden
@@ -48,7 +48,7 @@ export function ExperienceTimeline({ items }: ExperienceTimelineProps) {
               className="absolute start-1.5 top-2 flex size-3.5 items-center justify-center rounded-full border-2 border-[#002147] bg-white md:start-2.5 md:size-4"
               aria-hidden
             />
-            <div className={item.imageSrc ? "flex flex-col gap-6 md:flex-row md:items-start md:justify-between" : ""}>
+            <div className={item.imageSrc ? "flex flex-col gap-6 md:flex-row md:items-start md:justify-between md:gap-8" : ""}>
               <div className={item.imageSrc ? "min-w-0 flex-1" : ""}>
                 <p className="text-xs font-semibold uppercase tracking-widest text-[#002147]/55">
                   {item.period}
@@ -106,15 +106,15 @@ export function ExperienceTimeline({ items }: ExperienceTimelineProps) {
               </div>
 
               {item.imageSrc ? (
-                <div className="shrink-0 self-center md:self-start md:w-56 lg:w-64">
-                  <div className="relative overflow-hidden rounded-2xl border-2 border-[#002147]/15 bg-white p-1.5 shadow-[0_12px_28px_-8px_rgba(0,33,71,0.18)] transition-transform duration-300 hover:scale-[1.02]">
+                <div className="shrink-0 self-center md:self-start md:w-72 lg:w-80">
+                  <div className="relative overflow-hidden rounded-2xl border-2 border-[#002147]/15 bg-white p-1.5 shadow-[0_16px_36px_-10px_rgba(0,33,71,0.22)] transition-transform duration-300 hover:scale-[1.02]">
                     <Image
                       src={item.imageSrc}
                       alt={item.imageAlt || `${item.degree} — ${item.school}`}
-                      width={480}
-                      height={640}
+                      width={600}
+                      height={800}
                       className="aspect-[3/4] w-full rounded-xl object-cover object-center"
-                      sizes="(max-width: 768px) 100vw, 256px"
+                      sizes="(max-width: 768px) 100vw, 320px"
                     />
                   </div>
                 </div>
