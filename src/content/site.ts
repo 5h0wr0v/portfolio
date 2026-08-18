@@ -146,6 +146,8 @@ export const site = {
       location: "Dhaka, Bangladesh",
       period: "2022–2025",
       grade: "CGPA 3.68/4.00",
+      imageSrc: "/convo.jpg",
+      imageAlt: "Showrov Azam — Convocation at Daffodil International University",
       detail:
         "Focused on dialectal Bengali automatic speech recognition (ASR) and preservation of linguistic diversity through deep learning; coursework across algorithms, systems, and machine learning.",
       thesis:
