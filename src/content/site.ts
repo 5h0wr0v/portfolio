@@ -26,7 +26,7 @@ export type ContactLink = {
 
 export const site = {
   name: "Showrov Azam",
-  title: "NLP Researcher | Peer Reviewer @ ACM TALLIP",
+  title: "NLP Researcher | Low Resource Language Processing",
   bio: [
     "I am a Computer Science and Engineering graduate (Class of 2025) from Daffodil International University. My research focuses on developing machine intelligence for languages and communities that remain underrepresented in NLP research and technological resources.",
     "My research interests include Low-Resource Language Processing, Regional Dialect to Standard Dialect Classification, and Hate Speech Detection in Low-Resource Languages. I am particularly interested in developing NLP systems that can preserve the linguistic nuances, code-mixing patterns, and everyday usage of regional Bangla dialects rather than flattening them into a single standardized form.",
