@@ -400,9 +400,9 @@ export default function Home() {
               {site.name}
             </p>
             <p className="mt-1 text-slate-500">
-              Department of Computer Science and Engineering · Daffodil International University
+              All rights reserved.
             </p>
-            <p className="mt-4 text-slate-400">
+            <p className="mt-3 text-slate-400">
               © {new Date().getFullYear()} Showrov Azam · Personal Academic Webpage
             </p>
           </footer>
