@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Open_Sans, Roboto_Slab } from "next/font/google";
+import { Libre_Caslon_Text, Roboto_Slab } from "next/font/google";
 import "./globals.css";
 
-const openSans = Open_Sans({
-  variable: "--font-open-sans",
+const libreCaslon = Libre_Caslon_Text({
+  weight: ["400", "700"],
   subsets: ["latin"],
+  variable: "--font-libre-caslon",
   display: "swap",
 });
 
@@ -26,8 +27,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${openSans.variable} ${robotoSlab.variable} h-full scroll-smooth antialiased`}>
-      <body className="min-h-full bg-white text-slate-800 font-[family-name:var(--font-open-sans)]">
+    <html lang="en" className={`${libreCaslon.variable} ${robotoSlab.variable} h-full scroll-smooth antialiased`}>
+      <body className="min-h-full bg-white text-slate-800 font-[family-name:var(--font-libre-caslon)]">
         {children}
       </body>
     </html>
