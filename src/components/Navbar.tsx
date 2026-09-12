@@ -146,10 +146,10 @@ export function Navbar() {
               href={site.resume.href}
               download={site.resume.downloadFileName}
               className="inline-flex items-center rounded-full bg-[#002147] px-3 py-2 text-xs font-semibold text-white shadow-sm transition-all hover:bg-[#001a38] hover:shadow-md sm:px-4 sm:py-2.5 sm:text-sm"
-              title="Download resume (PDF)"
+              title="Download CV (PDF)"
             >
-              <span className="hidden sm:inline">Download resume</span>
-              <span className="sm:hidden">Resume</span>
+              <span className="hidden sm:inline">Download CV</span>
+              <span className="sm:hidden">CV</span>
             </a>
             <a
               href={site.resume.googleDriveUrl}
@@ -227,7 +227,7 @@ export function Navbar() {
                 onClick={() => setMobileOpen(false)}
                 className="mt-2 inline-flex items-center justify-center rounded-full bg-[#002147] px-4 py-3 text-sm font-semibold text-white"
               >
-                Download resume
+                Download CV
               </a>
               <a
                 href={site.resume.googleDriveUrl}
@@ -236,7 +236,7 @@ export function Navbar() {
                 onClick={() => setMobileOpen(false)}
                 className="text-center text-sm font-semibold text-[#002147] underline decoration-[#002147]/30 underline-offset-4"
               >
-                Open resume on Google Drive
+                Open CV on Google Drive
               </a>
             </div>
           </motion.div>

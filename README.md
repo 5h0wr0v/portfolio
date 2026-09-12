@@ -15,7 +15,7 @@ Open [http://localhost:3000](http://localhost:3000).
 
 - **Copy & credentials:** edit [`src/content/site.ts`](src/content/site.ts) (publications, experience, education, certifications).
 - **Headshot:** replace [`public/profile.svg`](public/profile.svg) or point `Hero.tsx` at your own image under `public/`.
-- **Resume PDF:** add `public/resume.pdf` so the navbar “Download resume” link works.
+- **CV PDF:** add `public/CV_Showrov_Azam.pdf` (or `public/resume.pdf`) so the navbar “Download CV” link works.
 
 ## Build
 

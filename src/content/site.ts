@@ -294,8 +294,8 @@ export const site = {
     },
   },
   resume: {
-    href: "/resume.pdf",
-    downloadFileName: "Showrov-Azam-resume.pdf",
+    href: "/CV_Showrov_Azam.pdf",
+    downloadFileName: "CV_Showrov_Azam.pdf",
     googleDriveUrl:
       "https://drive.google.com/file/d/1omVCrhMwiBLspLYXGYDeP25ku81tpHv-/view?usp=sharing",
   },
