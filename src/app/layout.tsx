@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Roboto_Slab } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -8,8 +8,8 @@ const inter = Inter({
   display: "swap",
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const robotoSlab = Roboto_Slab({
+  variable: "--font-roboto-slab",
   subsets: ["latin"],
   display: "swap",
 });
@@ -26,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable} h-full scroll-smooth antialiased`}>
-      <body className="min-h-full bg-white text-slate-800">
+    <html lang="en" className={`${inter.variable} ${robotoSlab.variable} h-full scroll-smooth antialiased`}>
+      <body className="min-h-full bg-white text-slate-800 font-[family-name:var(--font-inter)]">
         {children}
       </body>
     </html>
