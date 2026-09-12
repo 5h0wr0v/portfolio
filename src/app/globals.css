@@ -5,8 +5,8 @@
   --oxford: #002147;
   --background: #ffffff;
   --foreground: #1e293b;
+  --font-merriweather: "Merriweather", Georgia, serif;
   --font-roboto-slab: "Roboto Slab", Georgia, serif;
-  --font-merriweather: var(--font-merriweather), "Merriweather", Georgia, serif;
 }
 
 @theme inline {
@@ -20,14 +20,24 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-merriweather);
+body,
+aside,
+p,
+li,
+a,
+span,
+button {
+  font-family: "Merriweather", Georgia, serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 .font-academic-heading {
-  font-family: var(--font-roboto-slab);
+  font-family: "Roboto Slab", Georgia, serif !important;
 }
 
 ::selection {

@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${merriweather.variable} ${robotoSlab.variable} h-full scroll-smooth antialiased`}>
-      <body className="min-h-full bg-white text-slate-800 font-[family-name:var(--font-merriweather)]">
+      <body className={`${merriweather.className} min-h-full bg-white text-slate-800`}>
         {children}
       </body>
     </html>
