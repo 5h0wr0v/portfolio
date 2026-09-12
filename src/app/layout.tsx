@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, Roboto_Slab } from "next/font/google";
+import { Open_Sans, Roboto_Slab } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const openSans = Open_Sans({
+  variable: "--font-open-sans",
   subsets: ["latin"],
   display: "swap",
 });
@@ -26,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${robotoSlab.variable} h-full scroll-smooth antialiased`}>
-      <body className="min-h-full bg-white text-slate-800 font-[family-name:var(--font-inter)]">
+    <html lang="en" className={`${openSans.variable} ${robotoSlab.variable} h-full scroll-smooth antialiased`}>
+      <body className="min-h-full bg-white text-slate-800 font-[family-name:var(--font-open-sans)]">
         {children}
       </body>
     </html>
