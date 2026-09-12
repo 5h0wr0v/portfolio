@@ -386,62 +386,12 @@ export default function Home() {
           </section>
 
           {/* Contact Section */}
-          <section id="contact" className="scroll-mt-8 border-t border-slate-200 py-10">
-            <h2 className="font-academic-heading text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
-              Contact &amp; Academic References
-            </h2>
-
-            {/* Academic References */}
-            <div className="mt-6 grid gap-5 sm:grid-cols-2">
-              <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-5">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">
-                  Reference / Thesis Supervisor
-                </p>
-                <h3 className="mt-1 font-academic-heading text-lg font-bold text-slate-900">
-                  Mr. Amit Chakraborty
-                </h3>
-                <p className="text-xs text-slate-600">Assistant Professor</p>
-                <p className="text-xs text-slate-500">Department of Computer Science and Engineering, DIU</p>
-                <p className="mt-3 text-xs text-slate-700">
-                  <strong>Email: </strong>
-                  <a href="mailto:amit.cse@diu.edu.bd" className="text-[#002147] underline underline-offset-2">
-                    amit.cse@diu.edu.bd
-                  </a>
-                </p>
-                <p className="text-xs text-slate-700">
-                  <strong>Phone: </strong>+880 1718 384336
-                </p>
-              </div>
-
-              <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-5">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">
-                  Reference / Co-author
-                </p>
-                <h3 className="mt-1 font-academic-heading text-lg font-bold text-slate-900">
-                  Md. Abdullah Al Kafi
-                </h3>
-                <p className="text-xs text-slate-600">Lecturer</p>
-                <p className="text-xs text-slate-500">Department of Computer Science and Engineering, DIU</p>
-                <p className="mt-3 text-xs text-slate-700">
-                  <strong>Email: </strong>
-                  <a href="mailto:kafi.cse@diu.edu.bd" className="text-[#002147] underline underline-offset-2">
-                    kafi.cse@diu.edu.bd
-                  </a>
-                </p>
-                <p className="text-xs text-slate-700">
-                  <strong>Phone: </strong>+880 1776 026693
-                </p>
-              </div>
-            </div>
-
-            {/* Direct Contact Channels */}
-            <div className="mt-8">
-              <ContactSection
-                links={site.contact.links}
-                email={site.contact.email}
-                whatsapp={site.contact.whatsapp}
-              />
-            </div>
+          <section id="contact" className="scroll-mt-8 border-t border-slate-200">
+            <ContactSection
+              links={site.contact.links}
+              email={site.contact.email}
+              whatsapp={site.contact.whatsapp}
+            />
           </section>
 
           {/* Academic Footer */}
