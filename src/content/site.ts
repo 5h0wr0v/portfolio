@@ -29,7 +29,7 @@ export const site = {
   title: "NLP Researcher | Low Resource Language Processing",
   bio: [
     "I am a Computer Science and Engineering graduate (Class of 2025) from Daffodil International University. My research focuses on developing machine intelligence for languages and communities that remain underrepresented in NLP research and technological resources.",
-    "My research interests include Low-Resource Language Processing, Regional Dialect to Standard Dialect Classification, and Hate Speech Detection in Low-Resource Languages. I am particularly interested in developing NLP systems that can preserve the linguistic nuances, code-mixing patterns, and everyday usage of regional Bangla dialects rather than flattening them into a single standardized form.",
+    "My research interests include low-resource language processing, dialect-to-standard normalization, and hate speech detection in low-resource languages. I work on NLP systems that preserve linguistic nuances, code-mixing patterns, and everyday usage of regional dialects instead of flattening them into a single standardized form. My undergraduate thesis applied this approach to regional Bangla dialects, and the underlying methods extend to other low-resource, dialect-rich languages facing similar challenges.",
     "Currently, I am seeking MS or PhD opportunities in Computer Science departments at universities in the United States for Fall 2027, where I can further develop my research in low-resource NLP, dialect processing, language evaluation, and socially relevant NLP applications.",
   ],
   stats: [
