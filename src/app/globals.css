@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -6,13 +6,13 @@
   --background: #ffffff;
   --foreground: #1e293b;
   --font-roboto-slab: "Roboto Slab", Georgia, serif;
-  --font-libre-caslon: var(--font-libre-caslon), "Libre Caslon Text", "Times New Roman", Georgia, serif;
+  --font-merriweather: var(--font-merriweather), "Merriweather", Georgia, serif;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-libre-caslon);
+  --font-sans: var(--font-merriweather);
   --font-serif: var(--font-roboto-slab);
 }
 
@@ -23,7 +23,7 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-libre-caslon);
+  font-family: var(--font-merriweather);
 }
 
 .font-academic-heading {

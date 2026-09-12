@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Libre_Caslon_Text, Roboto_Slab } from "next/font/google";
+import { Merriweather, Roboto_Slab } from "next/font/google";
 import "./globals.css";
 
-const libreCaslon = Libre_Caslon_Text({
-  weight: ["400", "700"],
+const merriweather = Merriweather({
+  weight: ["300", "400", "700", "900"],
   subsets: ["latin"],
-  variable: "--font-libre-caslon",
+  variable: "--font-merriweather",
   display: "swap",
 });
 
@@ -27,8 +27,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${libreCaslon.variable} ${robotoSlab.variable} h-full scroll-smooth antialiased`}>
-      <body className="min-h-full bg-white text-slate-800 font-[family-name:var(--font-libre-caslon)]">
+    <html lang="en" className={`${merriweather.variable} ${robotoSlab.variable} h-full scroll-smooth antialiased`}>
+      <body className="min-h-full bg-white text-slate-800 font-[family-name:var(--font-merriweather)]">
         {children}
       </body>
     </html>
