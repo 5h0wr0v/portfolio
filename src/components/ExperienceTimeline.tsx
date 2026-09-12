@@ -53,7 +53,7 @@ export function ExperienceTimeline({ items }: ExperienceTimelineProps) {
                 <p className="text-xs font-semibold uppercase tracking-widest text-[#002147]/55">
                   {item.period}
                 </p>
-                <h3 className="mt-1 font-[family-name:var(--font-playfair)] text-lg font-semibold text-[#002147] sm:text-xl">
+                <h3 className="mt-1 font-academic-heading text-lg font-bold text-[#002147] sm:text-xl">
                   {item.degree}
                 </h3>
                 <p className="mt-1 text-sm font-medium text-[#002147]/80">

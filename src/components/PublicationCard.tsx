@@ -32,7 +32,7 @@ export function PublicationCard({ pub, index = 0 }: PublicationCardProps) {
     >
       <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
         <div>
-          <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold tracking-tight text-[#002147]">
+          <h3 className="font-academic-heading text-xl font-bold tracking-tight text-[#002147]">
             {pub.title}
           </h3>
           <p className="mt-1 text-sm font-medium text-[#002147]/70">{pub.venue}</p>

@@ -177,7 +177,7 @@ export function ContactSection({ links, email, whatsapp }: ContactSectionProps) 
           className="mx-auto max-w-3xl text-center"
         >
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#002147]/55">Contact</p>
-          <h2 className="mt-3 font-[family-name:var(--font-playfair)] text-3xl font-semibold tracking-tight text-[#002147] sm:text-4xl">
+          <h2 className="mt-3 font-academic-heading text-3xl font-bold tracking-tight text-[#002147] sm:text-4xl">
             Get in touch
           </h2>
           <p className="mt-4 text-base leading-relaxed text-[#002147]/75">

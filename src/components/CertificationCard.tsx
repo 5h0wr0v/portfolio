@@ -25,7 +25,7 @@ export function CertificationCard({ cert, index = 0 }: CertificationCardProps) {
           <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#002147]/45">
             {cert.issuerLine}
           </p>
-          <h3 className="mt-2 font-[family-name:var(--font-playfair)] text-base font-semibold leading-snug text-[#002147] sm:text-lg">
+          <h3 className="mt-2 font-academic-heading text-base font-bold leading-snug text-[#002147] sm:text-lg">
             {cert.name}
           </h3>
         </div>
