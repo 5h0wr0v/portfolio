@@ -117,7 +117,7 @@ export function AcademicSidebar() {
               rel="noopener noreferrer"
               className="text-center py-1.5 text-xs font-medium text-slate-600 underline underline-offset-4 hover:text-[#002147]"
             >
-              Open CV on Google Drive ↗
+              View CV in Google Drive ↗
             </a>
           </div>
           <div className="mt-6 text-center text-[11px] text-slate-400">
@@ -186,7 +186,7 @@ export function AcademicSidebar() {
                 rel="noopener noreferrer"
                 className="px-1 text-[11px] font-medium text-slate-500 underline decoration-slate-300 underline-offset-4 hover:text-[#002147]"
               >
-                Google Drive mirror ↗
+                View CV in Google Drive ↗
               </a>
             </div>
           </div>

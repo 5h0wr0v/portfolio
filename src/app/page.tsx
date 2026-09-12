@@ -80,7 +80,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="rounded-md border border-slate-300 bg-white px-3 py-1.5 text-slate-700 transition hover:bg-slate-50 hover:text-[#002147]"
                 >
-                  Google Drive ↗
+                  View CV in Google Drive ↗
                 </a>
                 {site.contact.links.map((link) => (
                   <a
