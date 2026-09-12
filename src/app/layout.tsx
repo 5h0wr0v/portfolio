@@ -1,13 +1,6 @@
 import type { Metadata } from "next";
-import { Merriweather, Roboto_Slab } from "next/font/google";
+import { Roboto_Slab } from "next/font/google";
 import "./globals.css";
-
-const merriweather = Merriweather({
-  weight: ["300", "400", "700", "900"],
-  subsets: ["latin"],
-  variable: "--font-merriweather",
-  display: "swap",
-});
 
 const robotoSlab = Roboto_Slab({
   variable: "--font-roboto-slab",
@@ -27,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${merriweather.variable} ${robotoSlab.variable} h-full scroll-smooth antialiased`}>
-      <body className={`${merriweather.className} min-h-full bg-white text-slate-800`}>
+    <html lang="en" className={`${robotoSlab.variable} h-full scroll-smooth antialiased`}>
+      <body className="min-h-full bg-white text-slate-800">
         {children}
       </body>
     </html>
