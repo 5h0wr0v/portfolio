@@ -86,29 +86,6 @@ export function Hero() {
           </div>
         </motion.div>
       </div>
-
-      <motion.div
-        initial={{ opacity: 0, y: 12 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.45, duration: 0.5 }}
-        className="relative mx-auto mt-12 max-w-6xl px-5 md:mt-16 lg:mt-20 lg:px-8"
-      >
-        <div className="flex flex-col divide-y divide-[#002147]/10 rounded-2xl border border-[#002147]/12 bg-[#002147]/[0.03] sm:flex-row sm:divide-x sm:divide-y-0">
-          {site.stats.map((s) => (
-            <div
-              key={s.label}
-              className="flex flex-1 flex-col items-center justify-center gap-1.5 px-4 py-6 sm:py-7"
-            >
-              <span className="font-[family-name:var(--font-playfair)] text-3xl font-semibold tabular-nums text-[#002147] sm:text-[2rem]">
-                {s.value}
-              </span>
-              <span className="max-w-[12rem] text-center text-[11px] font-medium uppercase leading-snug tracking-widest text-[#002147]/55 sm:text-xs">
-                {s.label}
-              </span>
-            </div>
-          ))}
-        </div>
-      </motion.div>
     </section>
   );
 }
