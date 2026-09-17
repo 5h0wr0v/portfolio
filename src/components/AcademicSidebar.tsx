@@ -121,7 +121,7 @@ export function AcademicSidebar() {
             </a>
           </div>
           <div className="mt-6 text-center text-[11px] text-slate-400">
-            Last updated March 2026
+            Last updated September, 2026
           </div>
         </div>
       )}
@@ -195,7 +195,7 @@ export function AcademicSidebar() {
         {/* Footer / Timestamp */}
         <div className="mt-8 border-t border-slate-200 pt-4 text-center">
           <p className="text-[11px] text-slate-400">
-            Last updated March, 2026
+            Last updated September, 2026
           </p>
         </div>
       </aside>
