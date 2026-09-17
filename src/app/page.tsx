@@ -133,14 +133,9 @@ export default function Home() {
 
           {/* Research Publications Section */}
           <section id="publications" className="scroll-mt-8 border-t border-slate-200 py-10">
-            <div className="flex flex-wrap items-baseline justify-between gap-2">
-              <h2 className="font-academic-heading text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
-                Research Publications
-              </h2>
-              <span className="text-xs text-slate-500 font-medium">
-                {site.publications.length} Papers (Conference &amp; Preprints)
-              </span>
-            </div>
+            <h2 className="font-academic-heading text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
+              Research Publications
+            </h2>
             <p className="mt-2 text-sm text-slate-600">
               Full-text access available on ResearchGate, arXiv, and publisher DOI links.
             </p>
