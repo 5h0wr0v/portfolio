@@ -7,6 +7,7 @@ export type PeerReview = {
   role: string;
   venue: string;
   venueUrl?: string;
+  venueType?: "journal" | "conference";
   detail: string;
   verificationUrl: string;
 };
@@ -53,6 +54,8 @@ export const site = {
       name: "ACM TALLIP",
       role: "Peer Reviewer",
       venue: "ACM Transactions on Asian and Low-Resource Language Information Processing (TALLIP)",
+      venueUrl: "https://dl.acm.org/journal/tallip",
+      venueType: "journal",
       detail:
         "Invited reviewer for manuscript evaluation, methodology soundness, and clarity of contribution in Asian and low-resource language NLP.",
       verificationUrl:
@@ -63,6 +66,8 @@ export const site = {
       name: "Progress in Artificial Intelligence",
       role: "Peer Reviewer",
       venue: "Progress in Artificial Intelligence (Springer Nature)",
+      venueUrl: "https://link.springer.com/journal/13748",
+      venueType: "journal",
       detail:
         "Invited reviewer for manuscript evaluation, methodology soundness, and clarity of contribution in artificial intelligence research.",
       verificationUrl:
@@ -74,6 +79,8 @@ export const site = {
       role: "Peer Reviewer",
       venue:
         "International Conference on Electrical, Computer, Communications and Mechatronics Engineering (ICECCME 2026)",
+      venueUrl: "https://www.iceccme.com/",
+      venueType: "conference",
       detail:
         "Conference peer reviewer for manuscript evaluation in electrical, computer, communications, and mechatronics engineering.",
       verificationUrl:
@@ -86,6 +93,7 @@ export const site = {
       venue:
         "The International Conference on Electrical and Computer Engineering Researches (ICECER-2026)",
       venueUrl: "https://www.icecer.com/",
+      venueType: "conference",
       detail:
         "Invited to review research submissions for the conference’s technical program, covering emerging developments across electrical and computer engineering, artificial intelligence, communications, signal processing, and related fields.",
       verificationUrl:

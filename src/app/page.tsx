@@ -209,7 +209,11 @@ export default function Home() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 underline underline-offset-4 hover:text-[#002147]"
                       >
-                        <span>Conference Website</span>
+                        <span>
+                          {"venueType" in review && review.venueType === "journal"
+                            ? "Journal Website"
+                            : "Conference Website"}
+                        </span>
                         <span aria-hidden>↗</span>
                       </a>
                     ) : null}
