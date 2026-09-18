@@ -175,12 +175,24 @@ export default function Home() {
                     </div>
                   </div>
                   <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-[#002147]/80">
-                    {review.role} · <span className="text-slate-500 font-normal">{review.venue}</span>
+                    {review.role} ·{" "}
+                    {"venueUrl" in review && review.venueUrl ? (
+                      <a
+                        href={review.venueUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-slate-500 font-normal hover:text-[#002147] hover:underline"
+                      >
+                        {review.venue} ↗
+                      </a>
+                    ) : (
+                      <span className="text-slate-500 font-normal">{review.venue}</span>
+                    )}
                   </p>
                   <p className="mt-3 text-sm text-slate-700 leading-relaxed">
                     {review.detail}
                   </p>
-                  <div className="mt-4 pt-3 border-t border-slate-100">
+                  <div className="mt-4 pt-3 border-t border-slate-100 flex flex-wrap items-center gap-4">
                     <a
                       href={review.verificationUrl}
                       target="_blank"
@@ -190,6 +202,17 @@ export default function Home() {
                       <span>Official Peer Review Verification (PDF)</span>
                       <span aria-hidden>↗</span>
                     </a>
+                    {"venueUrl" in review && review.venueUrl ? (
+                      <a
+                        href={review.venueUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 underline underline-offset-4 hover:text-[#002147]"
+                      >
+                        <span>Conference Website</span>
+                        <span aria-hidden>↗</span>
+                      </a>
+                    ) : null}
                   </div>
                 </motion.div>
               ))}

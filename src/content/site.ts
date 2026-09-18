@@ -1,6 +1,16 @@
 import type { IssuerBrand } from "@/components/IssuerLogo";
 import type { Publication } from "@/components/PublicationCard";
 
+export type PeerReview = {
+  id: string;
+  name: string;
+  role: string;
+  venue: string;
+  venueUrl?: string;
+  detail: string;
+  verificationUrl: string;
+};
+
 export type Certification = {
   id: string;
   brand: IssuerBrand;
@@ -34,7 +44,7 @@ export const site = {
   ],
   stats: [
     { label: "Publications", value: "4" },
-    { label: "Peer reviewer roles", value: "3" },
+    { label: "Peer reviewer roles", value: "4" },
     { label: "Certifications", value: "7" },
   ],
   peerReviews: [
@@ -69,7 +79,19 @@ export const site = {
       verificationUrl:
         "https://drive.google.com/file/d/1n2Zoya1fBwPQd8MjpkRg0VPT43OCGT9k/view?usp=sharing",
     },
-  ],
+    {
+      id: "icecer-2026",
+      name: "ICECER 2026",
+      role: "Peer Reviewer",
+      venue:
+        "The International Conference on Electrical and Computer Engineering Researches (ICECER-2026)",
+      venueUrl: "https://www.icecer.com/",
+      detail:
+        "Invited to review research submissions for the conference’s technical program, covering emerging developments across electrical and computer engineering, artificial intelligence, communications, signal processing, and related fields.",
+      verificationUrl:
+        "https://drive.google.com/file/d/1jjw5BlkwhRjqnwb6JSd-Kh94u198WdmI/view?usp=sharing",
+    },
+  ] satisfies PeerReview[],
   publications: [
     {
       id: "boishommo-hate",
