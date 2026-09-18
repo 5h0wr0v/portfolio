@@ -297,6 +297,6 @@ export const site = {
     href: "/CV_Showrov_Azam.pdf",
     downloadFileName: "CV_Showrov_Azam.pdf",
     googleDriveUrl:
-      "https://drive.google.com/file/d/1jpG7KK4VStgWL1ah018EcEQF57jMTvfB/view?usp=sharing",
+      "https://drive.google.com/file/d/1008Gl39Iye0YhQbfk_Pe0BO3B_FTJT97/view?usp=drive_link",
   },
 };
