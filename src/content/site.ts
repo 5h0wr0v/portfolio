@@ -125,6 +125,68 @@ export const site = {
         "https://www.researchgate.net/publication/390749631_BOISHOMMO_Holistic_Approach_for_Bangla_Hate_Speech",
       arxivUrl: "https://arxiv.org/abs/2504.08408",
       doiUrl: "https://doi.org/10.48550/arXiv.2504.08408",
+      figures: [
+        {
+          id: "inter-annotator-agreement-distribution",
+          title: "Inter Annotator Agreement Value Distribution over Categories",
+          shortTitle: "Agreement Distribution",
+          category: "Annotation Reliability",
+          src: "/publications/boishommo/inter-annotator-agreement-distribution.png",
+          alt: "Inter Annotator Agreement Value Distribution over Categories",
+          caption:
+            "Per-class agreement proportion among annotators across fine-grained abusive categories including Disability, Physical, Class, Race, Gender, Sexual Orientation, Religion, Ethnicity, Political Statement, and Behaviour.",
+          width: 663,
+          height: 402,
+        },
+        {
+          id: "inter-annotator-cohen-kappa-heatmap",
+          title: "Inter Annotator Agreement (Cohen’s Kappa) Heat Map",
+          shortTitle: "Cohen's Kappa Heatmap",
+          category: "Reliability Analysis",
+          src: "/publications/boishommo/inter-annotator-cohen-kappa-heatmap.png",
+          alt: "Inter Annotator Agreement (Cohen’s Kappa) Heat Map",
+          caption:
+            "Pairwise Cohen's Kappa heatmap evaluating agreement across annotator pairs (Annotator 1 vs 2, Annotator 1 vs 3, and Annotator 2 vs 3) for each fine-grained hate speech class.",
+          width: 757,
+          height: 608,
+        },
+        {
+          id: "category-wise-data-distribution",
+          title: "Category-wise Data Distribution",
+          shortTitle: "Category Distribution",
+          category: "Dataset Distribution",
+          src: "/publications/boishommo/category-wise-data-distribution.png",
+          alt: "Category-wise Data Distribution",
+          caption:
+            "Proportional category distribution in the BOISHOMMO multi-label dataset, highlighting high representation in Behaviour (19.3%), Ethnicity (14.0%), Religion (11.6%), and other abusive categories.",
+          width: 715,
+          height: 676,
+        },
+        {
+          id: "comparative-landscape-f1-algorithms",
+          title: "Comparative Landscape of F1 Score Across Algorithms",
+          shortTitle: "F1 Across Algorithms",
+          category: "Model Benchmark",
+          src: "/publications/boishommo/comparative-landscape-f1-algorithms.png",
+          alt: "Comparative Landscape of F1 Score Across Algorithms",
+          caption:
+            "Macro F1 score comparison across baseline machine learning models: Logistic Regression (60.0%), SVM (81.4%), and Random Forest (86.0%).",
+          width: 290,
+          height: 448,
+        },
+        {
+          id: "comparative-landscape-f1-categories",
+          title: "Comparative Landscape of F1 Score Across Categories",
+          shortTitle: "F1 Across Categories",
+          category: "Class Performance",
+          src: "/publications/boishommo/comparative-landscape-f1-categories.png",
+          alt: "Comparative Landscape of F1 Score Across Categories",
+          caption:
+            "Per-category F1 score breakdown contrasting model performance (Logistic Regression, Random Forest, SVM) across individual hate speech categories.",
+          width: 1017,
+          height: 633,
+        },
+      ],
     },
     {
       id: "icccnt-qg-bangla",
