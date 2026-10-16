@@ -197,6 +197,68 @@ export const site = {
         "Evaluates transformer-based models for Bangla question generation in low-resource settings. Co-authored with Sayma Jannat, Washik Wali Faieaz, Eftakhairul Islam, Md Sazzadur Ahamed, and colleagues.",
       researchGateUrl:
         "https://www.researchgate.net/publication/394085664_Question_Generation_in_Bangla_Using_Large_Language_Models_Evaluating_Transformer_Based_Models_for_Low-Resource_Languages",
+      figures: [
+        {
+          id: "word-cloud-paragraph",
+          title: "Word Cloud for Paragraph",
+          shortTitle: "Word Cloud",
+          category: "Corpus Linguistics",
+          src: "/publications/bangla-qg/word-cloud-paragraph.png",
+          alt: "Word Cloud for Paragraph",
+          caption:
+            "Visual representation of high-frequency Bangla tokens and lexical distribution within the source training paragraphs.",
+          width: 845,
+          height: 512,
+        },
+        {
+          id: "overview-of-dataset",
+          title: "Overview of The Dataset",
+          shortTitle: "Dataset Overview",
+          category: "Dataset Sample",
+          src: "/publications/bangla-qg/overview-of-dataset.png",
+          alt: "Overview of The Dataset",
+          caption:
+            "Exemplary pair of input context paragraph and generated interrogative question in Bengali.",
+          width: 541,
+          height: 245,
+        },
+        {
+          id: "proposed-methodology",
+          title: "Proposed Methodology",
+          shortTitle: "Methodology Pipeline",
+          category: "System Architecture",
+          src: "/publications/bangla-qg/proposed-methodology.png",
+          alt: "Proposed Methodology",
+          caption:
+            "End-to-end question generation workflow covering data collection, preprocessing (padding, truncation, tokenization, normalization, encoding), train/val/test splitting, transformer model training, and multi-metric evaluation (EM, BLEU, ROUGE).",
+          width: 460,
+          height: 388,
+        },
+        {
+          id: "text-length-distribution",
+          title: "Text Length Distribution of Our Dataset",
+          shortTitle: "Text Length Distribution",
+          category: "Data Analysis",
+          src: "/publications/bangla-qg/text-length-distribution.png",
+          alt: "Text Length Distribution of Our Dataset",
+          caption:
+            "Histogram analysis of sequence lengths across the training set, comparing source Bangla paragraph text lengths against generated Bangla question text lengths.",
+          width: 702,
+          height: 456,
+        },
+        {
+          id: "evaluation-metrics-bt5-vs-mt5",
+          title: "Evaluation Metrics Comparison Between bT5 and mT5",
+          shortTitle: "bT5 vs mT5 Comparison",
+          category: "Model Evaluation",
+          src: "/publications/bangla-qg/evaluation-metrics-bt5-vs-mt5.png",
+          alt: "Evaluation Metrics Comparison Between bT5 and mT5",
+          caption:
+            "Performance benchmark across Exact Match (EM: 28.65% vs 25.55%) and ROUGE metrics (ROUGE-1, ROUGE-2, ROUGE-L), demonstrating bT5's superiority over multilingual mT5 for Bangla question generation.",
+          width: 412,
+          height: 278,
+        },
+      ],
     },
     {
       id: "idaa-sadhu-cholit",
