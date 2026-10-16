@@ -45,7 +45,7 @@ export const site = {
   ],
   stats: [
     { label: "Publications", value: "4" },
-    { label: "Peer reviewer roles", value: "4" },
+    { label: "Peer reviewer roles", value: "5" },
     { label: "Certifications", value: "7" },
   ],
   peerReviews: [
@@ -98,6 +98,19 @@ export const site = {
         "Invited to review research submissions for the conference’s technical program, covering emerging developments across electrical and computer engineering, artificial intelligence, communications, signal processing, and related fields.",
       verificationUrl:
         "https://drive.google.com/file/d/1jjw5BlkwhRjqnwb6JSd-Kh94u198WdmI/view?usp=sharing",
+    },
+    {
+      id: "acdsa-2027",
+      name: "ACDSA 2027",
+      role: "Peer Reviewer",
+      venue:
+        "International Conference on Artificial Intelligence, Computer, Data Sciences and Applications (ACDSA 2027)",
+      venueUrl: "https://www.acdsa.org",
+      venueType: "conference",
+      detail:
+        "Served as a Review Committee Member evaluating research submissions for the technical program across artificial intelligence, computer science, data sciences, and applications.",
+      verificationUrl:
+        "https://drive.google.com/file/d/1bCCpAnaIqyBP78pE4Tyq8sbb1EtF9ih4/view?usp=drive_link",
     },
   ] satisfies PeerReview[],
   publications: [
