@@ -424,6 +424,17 @@ export default function Home() {
             <p className="mt-1 text-slate-500">
               All rights reserved.
             </p>
+
+            {/* View-Only Academic Visitor Counter */}
+            <div className="mt-4 flex items-center justify-center gap-2">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fportfolio-showrov-azam-46.vercel.app&count_bg=%23002147&title_bg=%231e293b&icon=&icon_color=%23E7E7E7&title=Academic+Views&edge_flat=false"
+                alt="Academic Page Views Counter"
+                className="inline-block h-5 transition-opacity hover:opacity-90"
+              />
+            </div>
+
             <p className="mt-3 text-slate-400">
               © {new Date().getFullYear()} Showrov Azam · Personal Academic Webpage
             </p>
