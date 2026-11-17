@@ -378,6 +378,92 @@ export const site = {
       researchGateUrl:
         "https://www.researchgate.net/publication/406152252_BOISHOMMO_Benchmarking_Class_Imbalance_in_Bangla_Multi-Label_Hate_Speech_Detection",
       doiUrl: "https://www.atlantis-press.com/proceedings/idaa-25/126024911",
+      figures: [
+        {
+          id: "dataset-creation-methodology",
+          title: "End-to-End Dataset Creation Methodology",
+          shortTitle: "Creation Pipeline",
+          category: "Methodology",
+          src: "/publications/boishommo-imbalance/dataset-creation-methodology.png",
+          alt: "Dataset Creation Methodology Flowchart",
+          caption:
+            "Five-phase workflow covering Data Collection, Preprocessing, Multi-Label Annotation, Inter-Annotator Agreement calculation, and final Dataset Compilation.",
+          width: 1024,
+          height: 176,
+        },
+        {
+          id: "annotated-comments-sample",
+          title: "Multi-Label Bengali Comments and English Translations",
+          shortTitle: "Annotated Comments",
+          category: "Dataset Sample",
+          src: "/publications/boishommo-imbalance/annotated-comments-sample.jpg",
+          alt: "Sample Annotated Comments Table",
+          caption:
+            "Exemplary Bengali social media comments mapped to English translations and multi-label binary indicators across 10 fine-grained abusive categories.",
+          width: 1024,
+          height: 332,
+        },
+        {
+          id: "category-distribution-imbalance",
+          title: "Distribution of Fine-Grained Hate Speech Categories",
+          shortTitle: "Category Imbalance",
+          category: "Class Distribution",
+          src: "/publications/boishommo-imbalance/category-distribution-imbalance.jpg",
+          alt: "Category Distribution Bar Chart",
+          caption:
+            "Class imbalance landscape in the multi-label dataset: dominant representation in Behaviour (19.3%, 482) and Ethnicity (14.0%, 350) contrasted with minority categories like Physical (6.8%) and Disability (5.3%).",
+          width: 1024,
+          height: 600,
+        },
+        {
+          id: "data-processing-steps",
+          title: "Four-Stage Data Preprocessing Pipeline",
+          shortTitle: "Text Processing",
+          category: "Data Preprocessing",
+          src: "/publications/boishommo-imbalance/data-processing-steps.jpg",
+          alt: "Data Processing Steps Infographic",
+          caption:
+            "Sequential preprocessing pipeline: (01) Removing Artefacts (emojis, hashtags, URLs, mentions), (02) Filtering Non-Bangla Tokens, (03) Normalizing Text across Unicode standards, and (04) Eliminating Stopwords for clean vectorization.",
+          width: 1011,
+          height: 597,
+        },
+        {
+          id: "inter-annotator-agreement-bars",
+          title: "Inter-Annotator Agreement Proportion Across Categories",
+          shortTitle: "Agreement Proportion",
+          category: "Annotation Quality",
+          src: "/publications/boishommo-imbalance/inter-annotator-agreement-bars.png",
+          alt: "Inter-Annotator Agreement Bar Chart",
+          caption:
+            "Comparative agreement breakdown showing overwhelmingly high Full Agreement (3/3 annotators, 97.8%–99.7%) alongside minimal Majority Agreement (2/3 annotators) across all 10 abusive classes.",
+          width: 1024,
+          height: 558,
+        },
+        {
+          id: "cohen-kappa-agreement-table",
+          title: "Pairwise Cohen's Kappa Inter-Annotator Agreement",
+          shortTitle: "Cohen's Kappa Table",
+          category: "Reliability Analysis",
+          src: "/publications/boishommo-imbalance/cohen-kappa-agreement-table.jpg",
+          alt: "Pairwise Cohen's Kappa Table",
+          caption:
+            "Pairwise agreement scores between annotator pairs (Annotator 1 vs 2, 1 vs 3, and 2 vs 3), yielding exceptional average Kappa values up to 0.9914 (Religion) and 0.9881 (Gender).",
+          width: 1024,
+          height: 413,
+        },
+        {
+          id: "logistic-regression-vs-linear-svc",
+          title: "Benchmarking Baseline Classifiers Under Severe Class Imbalance",
+          shortTitle: "LR vs Linear SVC",
+          category: "Model Benchmark",
+          src: "/publications/boishommo-imbalance/logistic-regression-vs-linear-svc.png",
+          alt: "Logistic Regression vs Linear SVC Heatmap",
+          caption:
+            "Per-category heatmaps evaluating Precision, Recall, and F1-score for Logistic Regression and Linear SVC, demonstrating how minority abusive classes are impacted by class imbalance.",
+          width: 693,
+          height: 377,
+        },
+      ],
     },
   ] satisfies Publication[],
   volunteering: [
